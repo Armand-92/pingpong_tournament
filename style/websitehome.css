@@ -155,15 +155,15 @@ body {
 }
 
 .ball-wrapper:nth-child(1) .ball {
-  background-image: url('./img/balle_2_blanche.png');
+  background-image: url('/img/balle_2_blanche.png');
 }
 
 .ball-wrapper:nth-child(2) .ball {
-  background-image: url('./img/balle_3_blanche.png');
+  background-image: url('/img/balle_3_blanche.png');
 }
 
 .ball-wrapper:nth-child(3) .ball {
-  background-image: url('./img/balle_4_blanche.png');
+  background-image: url('/img/balle_4_blanche.png');
 }
 
 .ball:hover {
