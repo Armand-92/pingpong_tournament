@@ -169,9 +169,6 @@ body {
 .ball:hover {
   transform: scale(1.3);
 }
-
-
-
 .ball-text {
   -webkit-text-stroke: 2px black;
   color: black;
