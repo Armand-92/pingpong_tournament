@@ -38,20 +38,20 @@ body {
   overflow: hidden;
 }
 
-/* Conteneur des balles avec marges */
+
 .container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  padding: 40px 20px 0 20px; /* marge haut 40px, côtés 20px */
+  padding: 40px 20px 0 20px;
 }
 
-/* Conteneur pour chaque balle et son message */
+
 .ball-container {
   position: relative;
 }
 
-/* Styles communs balles avec images */
+
 .ball2, .ball3, .ball4, .ball5, .ball6, .ball7 {
   border: none;
   border-radius: 50%;
@@ -62,7 +62,7 @@ body {
   background-position: center;
 }
 
-/* Dimensions et images spécifiques */
+
 .ball2 {
   width: 88px;
   height: 88px;
@@ -124,12 +124,12 @@ width: 200%;
   border-radius: 20px;
 }
 
-/* Afficher seulement le message lié à la balle survolée */
+
 .ball-container label:hover + .message {
   display: block;
 }
 
-/* Agrandir la balle au survol */
+
 .ball:hover,
 .ball2:hover,
 .ball3:hover,
@@ -140,7 +140,7 @@ width: 200%;
   transform: scale(1.7);
 }
 
-/* Cacher les inputs radio invisibles */
+
 input[type="radio"] {
   display: none;
 }

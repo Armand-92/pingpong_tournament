@@ -101,7 +101,7 @@ body {
   flex-direction: column;
 }
 
-/* Colors */
+
 .positive {
   background: #000000;
   border: 2px solid white;
@@ -116,13 +116,13 @@ body {
   transform: rotate(180deg);
 }
 
-/* Front and back faces */
+
 .front, .back {
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; /* stack halves vertically */
+  flex-direction: column; 
   backface-visibility: hidden;
 }
 
@@ -130,7 +130,6 @@ body {
   transform: rotateX(180deg);
 }
 
-/* Flip trigger */
 #flip-toggle:checked + .container .table-wrapper .table {
   transform: rotateX(180deg);
 }
@@ -141,7 +140,6 @@ p {
   align-items: flex-start;
 }
 
-/* Imagestrip style */
 .imagestrip {
   position: fixed;
   top: 20vh;
@@ -169,7 +167,6 @@ p {
   position: static;
 }
 
-/* Affiche les images au survol de la moitié positive avant ET arrière */
 .front .half.positive:hover > .imagestrip,
 .back .half.positive:hover > .imagestrip {
   display: flex;
@@ -203,7 +200,7 @@ p {
   position: static;
 }
 
-/* Affiche les images au survol de la moitié positive avant ET arrière */
+
 .front .half.negative:hover > .imagestrip2,
 .back .half.negative:hover > .imagestrip2 {
   display: flex;
