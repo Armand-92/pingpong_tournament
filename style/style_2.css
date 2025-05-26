@@ -1,0 +1,146 @@
+.logo-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  padding-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: 'MaPolicePerso';
+  src: url('/font/HALTimezone-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaPolicePerso';
+  src: url('/font/HALTimezone-Italic.otf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  background: black;
+  font-family: 'PT Serif', serif;
+  overflow: hidden;
+}
+
+/* Conteneur des balles avec marges */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 20px 0 20px; /* marge haut 40px, côtés 20px */
+}
+
+/* Conteneur pour chaque balle et son message */
+.ball-container {
+  position: relative;
+}
+
+/* Styles communs balles avec images */
+.ball2, .ball3, .ball4, .ball5, .ball6, .ball7 {
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.2s;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dimensions et images spécifiques */
+.ball2 {
+  width: 88px;
+  height: 88px;
+  background-image: url('/img/balle_2_blanche.png');
+}
+
+.ball3 {
+  width: 86px;
+  height: 86px;
+  background-image: url('/img/balle_3_blanche.png');
+}
+
+.ball4 {
+  width: 77px;
+  height: 77px;
+  background-image: url('/img/balle_4_blanche.png');
+}
+
+.ball5 {
+  width: 90px;
+  height: 90px;
+  background-image: url('/img/balle_5_blanche.png');
+}
+
+.ball6 {
+  width: 83px;
+  height: 83px;
+  background-image: url('/img/balle_6_blanche.png');
+}
+
+.ball7 {
+  width: 80px;
+  height: 80px;
+  background-image: url('/img/balle_7_blanche.png');
+}
+
+/* Messages (images qui pop) */
+.message {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 28px;
+  font-family: 'MaPolicePerso', serif;
+  font-style: italic;
+  text-align: center;
+  z-index: 20;
+}
+
+.message img {
+width: 200%;       
+  max-width: none;   
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* Afficher seulement le message lié à la balle survolée */
+.ball-container label:hover + .message {
+  display: block;
+}
+
+/* Agrandir la balle au survol */
+.ball:hover,
+.ball2:hover,
+.ball3:hover,
+.ball4:hover,
+.ball5:hover,
+.ball6:hover,
+.ball7:hover {
+  transform: scale(1.7);
+}
+
+/* Cacher les inputs radio invisibles */
+input[type="radio"] {
+  display: none;
+}
